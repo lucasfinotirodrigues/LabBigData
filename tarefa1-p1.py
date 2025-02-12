@@ -6,12 +6,12 @@ print(len(idades))
 idade_pd = pd.Series(idades)
 mean = round(idade_pd.mean())
 median = round(idade_pd.median())
-std = round(idade_pd.std())
+mode = idade_pd.mode()
 
 print("Média ==> ", mean)
 print("Mediana ==> ", median)
-print("Desvio Padrão ==> ", std)
+print("Moda ==> ", mode)
 
 idades = [mean if idade <= 21 else idade for idade in idades ]
 
-print(idades)
+# print(idades)
