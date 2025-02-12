@@ -14,4 +14,4 @@ print("Moda ==> ", mode)
 
 idades = [mean if idade <= 21 else idade for idade in idades ]
 
-# print(idades)
+print(idades)
